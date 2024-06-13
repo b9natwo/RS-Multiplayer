@@ -15,5 +15,4 @@ Once you've found it, change the value to whatever you'd like and save it.
 
 # Gameplay
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/-QMdTpxTaBs/0.jpg)](https://www.youtube.com/watch?v=-QMdTpxTaBs)
-
+https://www.youtube.com/watch?v=-QMdTpxTaBs
