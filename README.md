@@ -12,3 +12,7 @@ Due to GitHub file size limit, you have to download the [game file here](https:/
 
 To change your in-game username, open the **'xenia-canary-netplay.config.toml'** file and find the string **"user_0_name"**.
 Once you've found it, change the value to whatever you'd like and save it.
+
+# Gameplay
+
+https://youtu.be/-QMdTpxTaBs
