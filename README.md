@@ -16,3 +16,7 @@ Once you've found it, change the value to whatever you'd like and save it.
 # Gameplay
 
 https://www.youtube.com/watch?v=-QMdTpxTaBs
+
+# Need help?
+
+https://realsteel.rf.gd/faq
