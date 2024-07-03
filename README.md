@@ -7,8 +7,11 @@ Due to GitHub file size limit, you have to download the [game file here](https:/
 3. Open 'xenia-canary-netplay.exe', press 'File' located on the top left of the emulator, and open the [game file](https://drive.google.com/uc?export=download&id=1GXWo4hBDOioFTGbp_kICD8-K4x2Gcivm)
 4. Real Steel is now playable.
 
+# Emulator
 
-# Gamertag
+[Xenia Canary Netplay](https://github.com/AdrianCassar/xenia-canary)
+
+# In-game Username
 
 To change your in-game username, open the **'xenia-canary-netplay.config.toml'** file and find the string **"user_0_name"**.
 Once you've found it, change the value to whatever you'd like and save it.
@@ -19,4 +22,4 @@ https://www.youtube.com/watch?v=-QMdTpxTaBs
 
 # Need help?
 
-https://realsteel.rf.gd/faq
+Visit our [documentation](https://realsteel.rf.gd/faq)
