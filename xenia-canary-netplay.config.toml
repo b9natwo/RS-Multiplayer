@@ -59,7 +59,7 @@ defaults_date = 2020123113                        	# Do not modify - internal ve
 
 
 [Content]
-license_mask = -1                                 	# Set license mask for activated content.
+license_mask = 0                                  	# Set license mask for activated content.
                                                   	#  0 = No licenses enabled.
                                                   	#  1 = First license enabled. Generally the full version license in
                                                   	#      Xbox Live Arcade titles.
@@ -193,7 +193,7 @@ framerate_limit = 60                              	# Maximum frames per second. 
                                                   	# Defaults to 60, when set to 0, and VSYNC is enabled.
 
 gamma_render_target_as_srgb = false               	# When the host can't write piecewise linear gamma directly with correct blending, use sRGB output on the host for conceptually correct blending in linear color space while having slightly different precision distribution in the render target and severely incorrect values if the game accesses the resulting colors directly as raw data.
-gpu = "d3d12"                                    	# Graphics system. Use: [any, d3d12, vulkan, null]
+gpu = "any"                                       	# Graphics system. Use: [any, d3d12, vulkan, null]
 gpu_allow_invalid_fetch_constants = true          	# Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
 half_pixel_offset = true                          	# Enable support of vertex half-pixel offset (D3D9 PA_SU_VTX_CNTL PIX_CENTER). Generally games are aware of the half-pixel offset, and having this enabled is the correct behavior (disabling this may significantly break post-processing in some games), but in certain games it might have been ignored, resulting in slight blurriness of UI textures, for instance, when they are read between texels rather than at texel centers, or the leftmost/topmost pixels may not be fully covered when MSAA is used with fullscreen passes.
 ignore_32bit_vertex_index_support = false         	# For host graphics API downlevel testing only (useful only for Qualcomm Adreno 4xx-level host GPU testing), force indirection or pre-masking and pre-swapping of 32-bit vertex indices as if the host only supports 24-bit indices.
@@ -254,7 +254,7 @@ texture_cache_memory_limit_soft_lifetime = 30     	# Seconds a texture should be
 trace_gpu_prefix = "scratch/gpu/"                 	# Prefix path for GPU trace files.
 trace_gpu_stream = false                          	# Trace all GPU packets.
 use_fuzzy_alpha_epsilon = false                   	# Use approximate compare for alpha values to prevent flickering on NVIDIA graphics cards
-vsync = false                                     	# Enable VSYNC.
+vsync = true                                      	# Enable VSYNC.
 
 
 [General]
@@ -326,11 +326,12 @@ max_signed_profiles = 4                           	# Limits how many profiles ca
 
 
 [Live]
-api_address = "https://xenia-netplay-2a0298c0e3f4.herokuapp.com/"	# Xenia Master Server Address
-api_list = "127.0.0.1:36000/,"                    	# Comma delimited list URL1, URL2. Set api_address during runtime.
+api_address = "https://xenia-netplay-2a0298c0e3f4.herokuapp.com/"                	# Xenia Server Address e.g. IP:PORT
+api_list = "https://xenia-netplay-2a0298c0e3f4.herokuapp.com/,192.168.0.1:36000/,"	# Comma delimited list URL1, URL2. Set api_address during runtime.
 log_mask_ips = true                               	# Do not include P2P IPs inside the log
 logging = false                                   	# Log Network Activity & Stats
-offline_mode = false                              	# Offline Mode
+network_guid = ""                                 	# Network Interface GUID
+offline_mode = false                              	# Offline Mode e.g. not connected to a LAN
 stub_xlivebase = false                            	# Return success for all unimplemented XLiveBase calls.
 upnp = false                                      	# Automatically port forward using UPnP
 upnp_root = ""                                    	# UPnP Root Device
@@ -350,7 +351,7 @@ log_to_stdout = true                              	# Write log output to stdout
 [Memory]
 ignore_offset_for_ranged_allocations = false      	# Allows to ignore 4k offset for physical allocations with provided range. Certain titles check if result matches provided lower range.
 protect_on_release = false                        	# Protect released memory to prevent accesses.
-protect_zero = false                              	# Protect the zero page from reads and writes.
+protect_zero = false                               	# Protect the zero page from reads and writes.
 scribble_heap = false                             	# Scribble 0xCD into all allocated heap memory.
 writable_executable_memory = true                 	# Allow mapping memory with both write and execute access, for simulating behavior on platforms where that's not supported
 
@@ -378,14 +379,14 @@ show_profiler = false                             	# Show profiling UI by defaul
 
 
 [User]
-user_0_name = "Guest"                              	# Gamertag for user 0
-user_0_xuid = "0009D5382D0AAA36"                  	# XUID for user 0
-user_1_name = "XeniaUser53712"                    	# Gamertag for user 1
-user_1_xuid = "0009CE66D6B5D1D0"                  	# XUID for user 1
-user_2_name = "XeniaUser21290"                    	# Gamertag for user 2
-user_2_xuid = "00093533515E532A"                  	# XUID for user 2
-user_3_name = "XeniaUser33944"                    	# Gamertag for user 3
-user_3_xuid = "0009FAA6901B8498"                  	# XUID for user 3
+user_0_name = "Guest"                    	# Gamertag for user 0. 15 characters max.
+user_0_xuid = "000921F064796ADE"                  	# XUID for user 0
+user_1_name = "XeniaUser10196"                    	# Gamertag for user 1. 15 characters max.
+user_1_xuid = "0009F39B1FB127D4"                  	# XUID for user 1
+user_2_name = "XeniaUser54980"                    	# Gamertag for user 2. 15 characters max.
+user_2_xuid = "00091268E313D6C4"                  	# XUID for user 2
+user_3_name = "XeniaUser47049"                    	# Gamertag for user 3. 15 characters max.
+user_3_xuid = "00090DEA5604B7C9"                  	# XUID for user 3
 
 
 [Video]
