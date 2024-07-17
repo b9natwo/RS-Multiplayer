@@ -1,6 +1,6 @@
 # Xenia Canary Netplay
 
-This is being ran with the help of [Xenia Canary Netplay](https://github.com/xenia-canary/xenia-canary](https://github.com/AdrianCassar/xenia-canary/) which implements online multiplayer features. The REST API powering this fork can be found [here](https://github.com/AdrianCassar/Xenia-WebServices#xenia-web-services).
+This is being ran with the help of [Xenia Canary Netplay](https://github.com/AdrianCassar/xenia-canary/) which implements online multiplayer features. The REST API powering this fork can be found [here](https://github.com/AdrianCassar/Xenia-WebServices#xenia-web-services).
 
 # Installation
 
