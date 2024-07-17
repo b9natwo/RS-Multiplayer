@@ -1,3 +1,7 @@
+# Xenia Canary Netplay
+
+This is being ran with the help of [Xenia Canary Netplay]([https://github.com/xenia-canary/xenia-canary](https://github.com/AdrianCassar/xenia-canary/)) which implements online multiplayer features. The REST API powering this fork can be found [here](https://github.com/AdrianCassar/Xenia-WebServices#xenia-web-services).
+
 # Installation
 
 Due to GitHub file size limit, you have to download the [game file here](https://drive.google.com/uc?export=download&id=1GXWo4hBDOioFTGbp_kICD8-K4x2Gcivm).
