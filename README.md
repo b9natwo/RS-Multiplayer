@@ -26,4 +26,4 @@ https://www.youtube.com/watch?v=-QMdTpxTaBs
 
 # Need help?
 
-Visit our [documentation](https://realsteel.rf.gd/faq)
+Visit our [documentation](https://realsteelgame.online/faq)
