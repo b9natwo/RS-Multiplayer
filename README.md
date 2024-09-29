@@ -1,3 +1,5 @@
+[Total Downloads](https://img.shields.io/github/downloads/b9natwo/rs-multiplayer/latest/total?style=for-the-badge&label=Total%20Downloads&color=FF5733)
+
 # Xenia Canary Netplay
 
 This is being ran with the help of [Xenia Canary Netplay](https://github.com/AdrianCassar/xenia-canary/) which implements online multiplayer features to the Xenia Canary build. 
